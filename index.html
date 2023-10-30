@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-	<title> ACEDlearningcenter </title>
+	<title> ACEDlearningcenterexperiment </title>
 	
     <style>
 
@@ -15,21 +15,19 @@
 /* start of nav buttons style */
 
         body {
-            margin: 0px;
+            margin: 0;
+            padding: 0;
         }
 
         .divnav {
             background-color: rgb(60, 100, 92);
             position: sticky;
             top: 0;
-        }
-
-        .navbar-brand img {
-            border-radius: 6px;
+            z-index: 2;
         }
 
         .navbar-nav .nav-item {
-                margin-left: 130px; 
+                margin-right: 130px; 
         }
 
         .navbar-nav a {
@@ -53,157 +51,238 @@
         }
 
 /* end start of nav buttons style */ 
+
 /* Start of firstbody Contents */
+
+
+
+/* End of firstbody Contents */
+
         .divbody1 {
             background-image: url(acedbg.jpg);
-            background-position: fixed;
-            background-repeat: no-repeat;
             background-size: contain;
+            background-repeat: no-repeat;
             width: 100%;
             height: 140vh;
+
+        }
+
+        .cardmain {
+            z-index: 1;
         }
 
         #h1title {
-            color:rgb(60, 100, 92);
-            font-size: 100px;
+            position: absolute;
+            width: 40%;
+            margin-left: 13%;
+            margin-top: 6%;
+            font-size: 90px;
+            color: rgb(60, 100, 92);
+        }
+
+        .cardsub {
+            position: absolute;
+            width: 40%;
+            margin-left: 15%;
+            margin-top: 18%;
+            background-color: rgb(60, 100, 92, 0.5);
+            border: none;
         }
 
         #h1des {
-            background-color: rgb(60, 100, 92, 0.5);
             color: white;
-            font-size: 22px;
-            padding:20px;
-            border-top-right-radius: 30px;
-            border-bottom-left-radius: 30px;
+            padding: 15px;
+            font-size: 25px;
             text-align: justify;
         }
 
-        #signup1 {
-            font-size: 50px;
-            text-align: center;
-            color: white;
-            text-decoration: none;
-        }
-
-        #signup1 button {
-            text-decoration: none;
-            color: white;
-            background-color:rgb(218, 165, 32);
-            padding: 15px 30px;
-            border: none;
-            border-radius: 8px;
-            font-size: 20px;
+        .cardsub1 {
             position: absolute;
+            width: 40%;
+            margin-left: 28%;
+            margin-top: 40%;
+            background-color: rgb(255, 255, 255, 0);
+            border: none;
         }
 
-        #signup1 button:hover {
-            background-color:rgb(225, 191, 79);
-            text-decoration: solid;
+        .button-row button {
+            border-radius: 10px;
+            font-size: 30px;
+            background-color:rgb(218, 165, 32);
+            border: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #signupbtn {
+            margin-right: 30px;
+        }
+
+        .button-row a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button-row button:hover {
+            background-color: rgb(225, 191, 79);
+            transform: scale(1.2);
+
+        }
+
+        @media (min-width: 2555px) {
+        #h1title {
+            font-size: 141px; 
+        }
+
+        .cardsub {
+            position: absolute;
+            width: 40%;
+            margin-left: 15%;
+            margin-top: 20%;
+        }
+        
+        #h1des {
+            font-size: 35px;
+        }
+
+        .cardsub1 {
+            position: absolute;
+            width: 40%;
+            margin-left: 28%;
+            margin-top: 42%;
+        }
+
+        .button-row button {
+            font-size: 45px;
+        }
+
+        }
+
+        @media (max-width: 1440px) {
+        #h1title {
+            font-size: 78px; 
+        }
+
+        .cardsub {
+            position: absolute;
+            width: 40%;
+            margin-left: 15%;
+            margin-top: 20%;
+        }
+        
+        #h1des {
+            font-size: 19px;
+        }
+
+        .cardsub1 {
+            position: absolute;
+            width: 40%;
+            margin-left: 28%;
+            margin-top: 42%;
+        }
+
+        .button-row button {
+            font-size: 29px;
+        }
+
         }
 
         @media (max-width: 1024px) {
         #h1title {
-            font-size: 70px; 
+            font-size: 56px; 
         }
 
+        .cardsub {
+            position: absolute;
+            width: 40%;
+            margin-left: 15%;
+            margin-top: 20%;
+        }
+        
         #h1des {
-            font-size: 15px;
+            font-size: 13.4px;
         }
-        #signup1 button {
-            font-size: 15px;
-            padding: 8px 14px;
+
+        .cardsub1 {
+            position: absolute;
+            width: 40%;
+            margin-left: 26%;
+            margin-top: 43%;
         }
+        
+        .button-row button {
+            font-size: 26px;
+        }
+
         }
 
         @media (max-width: 768px) {
-        #h1title {
-            font-size: 50px; 
+
+        .divbody1 {
+            width: 100%;
+            height: 18vh;
         }
+
+        #h1title {
+            font-size: 55px; 
+            margin: 1px;
+            width: 55%;
+        }
+
+        .cardsub {
+            position: absolute;
+            width: 55%;
+            margin-left: 1%;
+            margin-top: 20%;
+        }
+        
         #h1des {
             font-size: 11px;
         }
-        #signup1 button {
-            font-size: 11px;
-            padding: 7px 12px;
+
+        .cardsub1 {
+            position: absolute;
+            width: 40%;
+            margin-left: 10%;
+            margin-top: 45%;
         }
+        
+        .button-row button {
+            font-size: 23px;
         }
 
-        @media (max-width: 425px) {
-        #h1title {
-            font-size: 30px; 
-        }
-        #h1des {
-            font-size: 5px;
-        }
-        #signup1 button {
-            font-size: 4.5px;
-            padding: 6px 11px;
-        }
-        }
-
-        @media (max-width: 375px) {
-        #h1title {
-            font-size: 25px; 
-        }
-        #h1des {
-            font-size: 4px;
-
-        }
-        #signup1 button {
-            font-size: 3.5px;
-            padding: 5px 10px;
-        }
         }
 
         @media (max-width: 320px) {
         #h1title {
-            font-size: 20px;
+            font-size: 20px; 
+            margin: 1px;
+            width: 55%;
         }
+
+        .cardsub {
+            position: absolute;
+            width: 80%;
+            margin-left: 1%;
+            margin-top: 20%;
+        }
+        
         #h1des {
-            font-size: 4px;
+            font-size: 5px;
         }
 
-        #signup1 button {
-            font-size: 2.5px;
-            padding: 4px 8px;
+        .cardsub1 {
+            position: absolute;
+            width: 40%;
+            margin-left: 10%;
+            margin-top: 45%;
         }
-        }
-
-/* End of firstbody Contents */
-/* Start of Footer Contents */
-      
-        .footer {
-            background-color: rgb(30, 49, 45);
-            color:white;
-            padding-top: 10px;
-            padding-bottom: 10px;
+        
+        .button-row button {
+            font-size: 7px;
         }
 
-        .logins a:hover{
-            text-decoration: underline;
         }
-
-        .icons img {
-            width: 20px;
-            height: 20px;
-        }
-
-        .icons a img {
-            width: 30px;
-            height: 30px;
-            margin-left: 20px;
-
-        }
-
-        .text-center a {
-            text-decoration: none;
-        }
-
-        .text-center a:hover img {
-            transform: scale(1.8);
-        }
-
-/* End of Footer Contents */
 
 	</style>
 
@@ -237,8 +316,6 @@
                                 <li><a class="dropdown-item" href="#">Contact Us</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-                        <li class="nav-item" id="lastnavitem"><a class="nav-link" href="#">Log In</a></li>
                     </ul>
                 </div>
             </div>
@@ -247,34 +324,28 @@
 <!-- end of nav button code -->
 
 <!-- start of body1 code -->
-<div class="divbody1">
-    <div class="container divcont">
-        <h1 id="h1title"> ACED <br> Learning Center </h1> <br>
-        
-        <p class="col-7" id="h1des"> "Welcome to ACED Learning Center - where knowledge is limitless! Unleash your academic potential with our engaging asynchronous tutorials. We're more than a learning center; we're your partners in conquering math, science, and tech! Join us on a thrilling journey to accelerate your skills, paving the way for success in school and life's challenges. Let ACED be your compass to academic excellence and a future of triumphs! <br> <br> Join us today, and let's ACE it together!  🏆</p>
-        
-        <div class="col-7" id="signup1" >
-            <a href="#"> <button class="btn"> Sign Up </button> </a>
-        </div>
-    </div> 
-</div>
+                <div class="divbody1">
+                    <div class="card cardmain">
+                            <h1 id="h1title"> ACED <br> Learning Center </h1>
+                        <div class="card cardsub">
+                            <p id="h1des"> "Welcome to ACED Learning Center - where knowledge is limitless! Unleash your academic potential with our engaging asynchronous tutorials. We're more than a learning center; we're your partners in conquering math, science, and tech! Join us on a thrilling journey to accelerate your skills, paving the way for success in school and life's challenges. Let ACED be your compass to academic excellence and a future of triumphs! <br> <br> Join us today, and let's ACE it together! 🏆</p>
+                        </div>
+                        <div class="card cardsub1">
+                            <div class="card-content">
+                              <div class="button-row">
+                                <button id="signupbtn"> <a href="#">Sign Up</a></button>
+                                <button> <a href="#">Log In</a></button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+
 
 <!-- end of body1 code -->
 
-        <div class="footer">
-
-            <p class="text-center logins"> <a href="#"> Sign Up </a> or <a href="#"> Log In </a> to your account or click the <strong> About Us<sup>▾</sup> </strong> at the top to learn more. </p>
-            <p class="text-center icons"> Connect with us thru: 
-                <a href="#"> <img src="fbicon.png"> </a> 
-                <a href="#"> <img src="instaicon.png"> </a>
-                <a href="#"> <img src="yticon.png"> </a>
-                <a href="#"> <img src="twiticon.png"> </a>
-                <a href="#"> <img src="tikicon.png"> </a>
-            </p>
-
-        </div>
-
-    </div>
+    <h3> </h3>
 
 </body>
 
