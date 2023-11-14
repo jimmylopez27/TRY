@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	
+
+	<title> ACEDlearningcenter </title>
+    
+<style>
+
+        body {
+            background-image: url('contactusbg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card {
+            background: transparent;
+            border: none;
+        }
+
+        .content {
+            margin-top: 30px;
+            border: none;
+        }
+
+        .content p {
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: justify;
+        }
+    
+        .contentrow img {
+            width: 30px;
+            height: 30px;
+
+        }
+
+
+
+        .messageform input,
+        .messageform textarea {
+            margin-top: 15px;
+        }
+        
+
+
+        .messageform button {
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+
+        .messageform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .insideform {
+            background-color: rgb(60, 100, 92, 0.5);
+            margin-top: 30px;
+            padding-top:50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+        }
+
+        .insideform input {
+            border-color: none;
+        }
+
+        .insideform button:hover {
+            background-color: rgb(206, 174, 69);
+        }
+
+        div h3, p, h5 {
+         font-size:x-large;
+         color: white;
+        }
+
+        label {
+            color: white;
+        }
+        
+        .popocard {
+            background-color: rgb(60, 100, 92, 0.5);
+            padding: 40px;
+        }
+
+    </style>
+
+
+<body>
+
+<div class="container-fluid">
+    <div class="row main">
+        <div class="col-12">
+            <div class="card content">
+                <h3 class="text-center"> Contact Us </h3>
+                <p> If you have any questions or inquiries, feel free to contact or message ACED Learning Center and provide your details, such as full name and email </p>
+    
+                <div class="row contentrow">
+                    <div class="col-md-6">
+                        <div class="card contactdiv">
+                           <div class="card popocard">
+                            <div class="row box">
+                                <div class="insidecontact">
+                                <img src="addressicon.png">
+                                </div>
+                                <div class="insidecontact">
+                                <h5> Address </h5>
+                                <p> Pacheco Building, Singao Road, Kidapawan City </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row box">
+                                <div class="insidecontact">
+                                <img src="phoneicon.png">
+                                </div>
+                                <div class="insidecontact">
+                                <h5> Phone </h5>
+                                <p> Tel no. 555-1234 / SMART: 09307607278 </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row box">
+                                <div class="insidecontact">
+                                <img src="emailicon.png">
+                                </div>
+                                <div class="insidecontact">
+                                <h5> Email </h5>
+                                <p> Acedlearningcenter@gmail.com </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 message">
+                        <div class="card messagediv">
+                            <form class="messageform ">
+                                <div class="card insideform">
+                                <span class="formtitle"><h5>Send Message</h5></span>
+            
+                                <input type="text" id="name" name="name" placeholder="Type your full name here" required>
+                                <label for="name">Full Name</label>
+                                
+                                <input type="email" id="email" name="email" placeholder="Type your email here" required>
+                                <label for="email">Email Address</label>
+                                
+                                <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+                                <label for="message">Message</label>
+                                
+                                <button type="submit"> Submit </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end of two columns -->
+
+</body>
+</html>

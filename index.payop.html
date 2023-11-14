@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orig.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<title> ACEDlearningcenterexperiment </title>
+	
+    <style>
+
+/* Use this link as guide for further contents https://dribbble.com/ */
+
+/* start of nav buttons style */
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .divnav {
+            background-color: rgb(60, 100, 92);
+            position: sticky;
+            z-index: 2;
+        }
+
+        .navbar-nav .nav-item {
+                margin-right: 130px; 
+        }
+
+        .navbar-nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+        }
+
+        .dropdown-menu {
+            background-color: rgb(60, 100, 92);
+            border-color: white;
+        }
+
+        .dropdown-menu li a {
+            color: white;
+        }
+
+        .navbar-nav a:hover,
+        .navbar-nav li:hover > .nav-link {
+            background-color: white;
+            color: black;
+        }
+
+        ul #navbarDropdown {
+            text-decoration: underline;
+        }
+
+/* end start of nav buttons style */ 
+
+
+/* start of payment code */
+        
+        .main {
+            background-color: rgb(60, 100, 92, 0.5);
+            width: 100%;         
+        }
+
+        .mainpay {
+            padding: 50px;
+            margin-top: 10px;
+            font-size: 20px;    
+        }
+
+        .mainpay h1 {
+            text-align: center;
+        }
+
+        .mainpay p {
+            text-align: justify;
+        }
+
+        .cardrow {
+            margin-bottom: 10px;
+        }
+
+        .card {
+            margin: 10px;
+            color: white;
+            padding: 10PX;
+            border-color: white;
+
+        }
+
+        .card h3, h1, h6 {
+            text-align: center;
+        }
+
+        .cardrow .card {
+            border-radius: 0;
+        }
+         
+        .incard {
+            background-color: white;
+            padding: 20px;
+            color: black;
+        }
+
+        .incard p {
+            font-size: 20px;
+        }
+
+        #carddes1 {
+            background-color: rgb(35, 40, 46);
+        }
+
+        #carddes2 {
+            background-color: rgb(0, 100, 90);
+        }
+        
+        #carddes3 {
+            background-color: rgb(204, 173, 72);
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        .incard {
+            text-align: center;
+        }
+
+/* end of payment code */
+
+/* Start of footer Contents */
+        .footer {
+            background-color: rgb(30, 49, 45);
+            color:white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .logins a:hover{
+            text-decoration: underline;
+        }
+
+        .icons img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .icons a img {
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+
+        }
+
+        .icons a:hover img {
+            transform: scale(1.8);
+        }
+
+/* End of footer Contents */
+
+/* Start of Media querries Contents */
+
+@media only screen and (min-width: 2560px) {
+        
+        .divnav {
+                font-size: 30px;
+            }
+        
+        .dropdown-menu {
+            font-size: 30px;
+        }
+            
+        #h1title {
+            color: rgb(60, 100, 92);
+            font-size: 100px;
+
+        }
+        #h1des {
+            background-color: rgb(60, 100, 92, 0.5);
+            color: white;
+            text-align: justify;
+            font-size: 30px;
+            padding: 20px;
+            border-radius: 0 30px;
+        }
+
+        button {
+            font-size: 30px;
+
+        }
+
+        .footer {
+            font-size: 30px;
+        }
+
+        }
+
+        @media only screen and (max-width: 1440px) {
+        
+        .divnav {
+                font-size: 30px;
+            }
+        
+        .dropdown-menu {
+            font-size: 30px;
+        }
+            
+        #h1title {
+            color: rgb(60, 100, 92);
+            font-size: 100px;
+
+        }
+        #h1des {
+            background-color: rgb(60, 100, 92, 0.5);
+            color: white;
+            text-align: justify;
+            font-size: 30px;
+            padding: 20px;
+            border-radius: 0 30px;
+            margin-right: 10px;
+            margin-right: 40%;
+        }
+
+        button {
+            font-size: 30px;
+
+        }
+
+        .footer {
+            font-size: 25px;
+        }
+
+        }
+
+        @media only screen and (max-width: 1024px) {
+        
+        .divnav {
+                font-size: 30px;
+            }
+        
+        .dropdown-menu {
+            font-size: 30px;
+        }
+            
+        #h1title {
+            color: rgb(60, 100, 92);
+            font-size: 100px;
+
+        }
+        #h1des {
+            background-color: rgb(60, 100, 92, 0.5);
+            color: white;
+            text-align: justify;
+            font-size: 30px;
+            padding: 20px;
+            border-radius: 0 30px;
+            margin-right: 10px;
+            margin-right: 20%;
+        }
+
+        button {
+            font-size: 30px;
+
+        }
+
+        .footer {
+            font-size: 25px;
+        }
+
+        }
+
+        @media only screen and (max-width: 768px) {
+        
+        .divnav {
+                font-size: 25px;
+            }
+        
+        .dropdown-menu {
+            font-size: 25px;
+        }
+            
+        #h1title {
+            color: rgb(60, 100, 92);
+            font-size: 80px;
+
+        }
+        #h1des {
+            background-color: rgb(60, 100, 92, 0.5);
+            color: white;
+            text-align: justify;
+            font-size: 25px;
+            padding: 20px;
+            border-radius: 0 30px;
+            margin-right: 10px;
+            margin-right: 20%;
+        }
+
+        button {
+            font-size: 25px;
+
+        }
+
+        .footer {
+            font-size: 20px;
+        }
+
+        }
+
+        @media only screen and (max-width: 425px) {
+        
+        .divnav {
+                font-size: 20px;
+            }
+        
+        .dropdown-menu {
+            font-size: 20px;
+        }
+            
+        #h1title {
+            color: rgb(60, 100, 92);
+            font-size: 50px;
+
+        }
+        #h1des {
+            background-color: rgb(60, 100, 92, 0.5);
+            color: white;
+            text-align: justify;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 0 30px;
+            margin-right: 10px;
+            margin-right: 10%;
+        }
+
+        button {
+            font-size: 20px;
+
+        }
+
+        .footer {
+            font-size: 11px;
+        }
+
+        .modal-content {
+            font-size: 13px;    
+       }
+
+        }
+
+        @media only screen and (max-width: 375px) {
+        
+        .divnav {
+                font-size: 20px;
+            }
+        
+        .dropdown-menu {
+            font-size: 20px;
+        }
+            
+        #h1title {
+            color: rgb(60, 100, 92);
+            font-size: 40px;
+
+        }
+        #h1des {
+            background-color: rgb(60, 100, 92, 0.5);
+            color: white;
+            text-align: justify;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 0 30px;
+            margin-right: 10px;
+            margin-right: 10%;
+        }
+
+        button {
+            font-size: 20px;
+
+        }
+
+        .footer {
+            font-size: 10px;
+        }
+
+        .modal-content {
+            font-size: 10px;    
+       }
+        }
+
+        @media only screen and (max-width: 320px) {
+        
+        .divnav {
+                font-size: 18px;
+            }
+        
+        .dropdown-menu {
+            font-size: 18px;
+        }
+            
+        #h1title {
+            color: rgb(60, 100, 92);
+            font-size: 35px;
+
+        }
+        #h1des {
+            background-color: rgb(60, 100, 92, 0.5);
+            color: white;
+            text-align: justify;
+            font-size: 16px;
+            padding: 20px;
+            border-radius: 0 30px;
+            margin-right: 10px;
+            margin-right: 10%;
+        }
+
+        button {
+            font-size: 18px;
+
+        }
+
+        .footer {
+            font-size: 6px;
+        }
+
+        }
+
+/* End of Media querries Contents */
+
+/* Start of Modal Contents */
+.modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            max-width: 500px;
+            height: auto;
+            max-height: 80%;
+            overflow-y: auto;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .modal-content {
+            background-color: rgba(60, 100, 92);
+            padding: 40px;
+            border-color: rgb(36, 59, 55);
+            border-width: 4px;
+
+        }
+
+        form h1 {
+            color:rgb(225, 191, 79);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .modal-content .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: #ffffff; 
+            cursor: pointer;
+        }
+
+        .modal-content .close:hover {
+            color: #ff0000;
+        }
+
+        form label {
+            color: #ffffff;
+        }
+
+        .modal-content button[type="submit"] {
+            background-color: #ffffff; 
+            color: rgb(0, 0, 0); 
+            border: none;
+            padding: 5px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+            margin-left: 40%;
+        }
+
+        .modal-content button[type="submit"]:hover {
+            background-color:rgb(235, 210, 130);
+        }
+
+        .loginform label {
+            margin-bottom: 20px;
+        }
+
+
+        .signupform label {
+            margin-bottom: 20px;
+        }
+
+        .signupform h2 {
+            color:rgb(225, 191, 79);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+/* End of Modal Contents */
+
+	</style>
+
+</head>
+
+<body>
+
+<!-- start of nav button code -->
+    <div class="divnav">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="1.jpg" width="120" height="50" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Payment Options
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="indextest.html"> Testimonials </a></li>
+                                <li><a class="dropdown-item" href="indextut.html">Tutors</a></li>
+                                <li><a class="dropdown-item" href="indexsamvid.html">Sample Videos</a></li>
+                                <li><a class="dropdown-item" href="indexservoff.html">Services Offered</a></li>						
+                                <li><a class="dropdown-item" href="indexcontus.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!-- end of nav button code -->
+
+<!-- start of card code -->
+    <div class="main">
+        <div class="container-fluid mainpay">
+            <h1> Our Payment Options</h1>
+            <p> ACED Learning Center offers flexible membership payment plans with varying services based on your chosen option. Whether monthly, quarterly, or annually, each plan is designed to cater to your specific needs, providing a personalized and enriched learning experience. Select the plan that suits you best and unlock a range of educational services tailored to support your academic journey with ACED. </p>
+        </div>
+
+        <div class="container-fluid cardrow">
+            <div class="row justify-content-center">
+                <div class="card col-md-3" id="carddes1">
+                    <h3>SPARK</h3>
+                    <h6>(Monthly Payment)</h6>
+                    <h1>₱99.00</h1>
+                    <div class="incard">
+                        <p> ✓1 user </p> 
+                        <p>✓Access to a limited set of tutorials.</p>
+                        <p>✓Monthly subscription for affordability.</p>
+                        <p>✓Cancel anytime for flexibility.</p>
+                        <p>✓Email support for assistance.</p>
+                        <p>✓Basic progress tracking.</p>  
+                        </div>
+                </div>
+                <div class="card carddes col-md-3" id="carddes2">
+                    <h3>QUANTUM</h3>
+                    <h6>(Quarterly Payment)</h6>
+                    <h1>₱199.00</h1>
+                    <div class="incard">
+                        <p>✓ 2 users </p>  
+                        <p>✓Expanded tutorial library.</p>
+                        <p>✓Quarterly billing for convenience.</p>
+                        <p>✓Priority email support.</p>
+                        <p>✓Quizzes and assessments for deeper engagement.</p>
+                        <p>✓Certificate of completion.</p> 
+                    </div>
+                </div>
+                <div class="card carddes col-md-3" id="carddes3">
+                    <h3>APEX</h3>
+                    <h6>(Yearly Payment)</h6>
+                    <h1>₱999.00</h1>
+                    <div class="incard">
+                        <p> ✓3 users </p> 
+                        <p>✓Full access to all tutorials and premium content.</p>
+                        <p>✓Annual billing for cost savings.</p>
+                        <p>✓24/7 priority support.</p>
+                        <p>✓Personalized learning plans.</p>
+                        <p>✓Exclusive webinars and events.</p>  
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+
+<!-- end of card code -->
+
+<!-- Start of The log in Modal -->
+<div id="myModal" class="modal col-12">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <form class="loginform">
+            <h1> Log in Form </h1>
+            <label class="col-4" for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="type your username here" size="23" required> <br>
+            
+            <label class="col-4" for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="type your password here" size="23" required>
+            <br>
+            <button id="submitbut" type="submit">Log in</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    var modal = document.getElementById("myModal");
+
+    function openModal() {
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    };
+</script>
+
+<!-- End of The log in Modal -->
+<!-- Start of The sign up in Modal -->
+<div id="signupModal" class="modal col-12">
+    <div class="modal-content">
+        <span class="close" onclick="closeSignupModal()">&times;</span>
+        <form class="signupform">
+            <h2> Create an Account (1 of 3) </h2>
+            <label class="col-4" for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="type your first name here" size="23" required> <br>
+            
+            <label class="col-4" for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="type your last name here" size="23" required> <br>
+            
+            <label class="col-4" for="middle-name">Middle-Name: </label>
+            <input type="text" id="middle-name" name="middle-name" placeholder="type your middle name here" size="23"> <br>
+            
+            <label class="col-4" for="middle-name">Suffix: </label>
+            <input type="text" id="suffix-name" name="suffix-name" placeholder="type your suffix name here" size="23" > <br>
+
+            <label class="col-4" for="user-email">Email:</label>
+            <input type="email" id="user-email" name="user-email" placeholder="type your valid e-mail here" size="23" required> <br>
+            
+            <label class="col-4" for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" selected disabled>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select> <br>
+
+            <label class="col-4" for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" selected disabled>Select Country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="canada">United Kingdom</option>
+                <option value="canada">Australia</option>
+                <option value="canada">Philippines</option>
+
+            </select> <br>
+
+            <label class="col-4" for="province">Region:</label>
+            <select id="province" name="province" required>
+                <option value="" selected disabled>Select Region</option>
+                <option value="">Region I</option>
+                <option value="">Region II</option>
+                <option value="">Region XI</option>
+                <option value="">Region XII</option>
+            </select> <br>
+            
+            <label class="col-4" for="province">Province/State:</label>
+            <select id="province" name="province" required>
+                <option value="" selected disabled>Select Province/State</option>
+                <option value="">South Cotabato</option>
+                <option value="">Cotabato</option>
+                <option value="">Sultan Kudarat</option>
+                <option value="">Sarangani</option>
+            </select> <br>
+        
+            <label class="col-4" for="city">City:</label>
+            <select id="city" name="city" required>
+                <option value="" selected disabled>Select City</option>
+                <option value="">Kidapawan</option>
+                <option value="">Arakan</option>
+                <option value="">Carmen</option>
+                <option value="">President Roxas</option>
+            </select>
+
+
+            <br>
+            <button id="signup-submitbut" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    var signupModal = document.getElementById("signupModal");
+
+    function openSignupModal() {
+        signupModal.style.display = "flex";
+    }
+
+    function closeSignupModal() {
+        signupModal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == loginModal) {
+            closeLoginModal();
+        } else if (event.target == signupModal) {
+            closeSignupModal();
+        }
+    };
+</script>
+
+<!-- End of The sign up Modal -->
+
+<!-- start of footer code -->
+<footer class="footer text-center">
+<p class="logins">
+<a onclick="openSignupModal()" href="#">Sign Up</a> or <a onclick="openModal()" href="#">Log In</a> to your account or click the <strong>About Us<sup>▾</sup></strong> at the top to learn more.
+</p>
+<p class="icons">
+Connect with us thru:
+<a href="#"><img src="fbicon.png" alt="Facebook"></a>
+<a href="#"><img src="instaicon.png" alt="Instagram"></a>
+<a href="#"><img src="yticon.png" alt="YouTube"></a>
+<a href="#"><img src="twiticon.png" alt="Twitter"></a>
+<a href="#"><img src="tikicon.png" alt="TikTok"></a>
+</p>
+</footer>
+
+<!-- end of footer code -->
+
+</body>
+
+
+</html>
