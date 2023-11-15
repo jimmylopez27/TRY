@@ -59,7 +59,7 @@
 
 
 /* start of card code */
-body {
+        body {
             background-image: url('contactusbg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
@@ -68,6 +68,10 @@ body {
         .card {
             background: transparent;
             border: none;
+        }
+
+        .titlediv {
+            background-color: rgb(206, 174, 69, 0.5);
         }
 
         .content {
@@ -86,8 +90,6 @@ body {
             height: 30px;
 
         }
-
-
 
         .messageform input,
         .messageform textarea {
@@ -109,13 +111,24 @@ body {
         align-items: center;
         }
 
+        
+        .contactform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        }
+
+        
+        .address {
+            background-color: rgb(60, 100, 92, 0.5);
+            padding:20px;
+        }
+
         .insideform {
             background-color: rgb(60, 100, 92, 0.5);
-            margin-top: 30px;
-            padding-top:50px;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-bottom: 50px;
+            margin-top: 50px;
+            padding:50px;
         }
 
         .insideform input {
@@ -126,19 +139,22 @@ body {
             background-color: rgb(206, 174, 69);
         }
 
-        div h3, p, h5 {
+        .tit, #titdes {
          font-size:x-large;
          color: white;
         }
 
-        label {
+        .messageform h5, label {
             color: white;
         }
-        
-        .popocard {
-            background-color: rgb(60, 100, 92, 0.5);
-            padding: 40px;
+
+        .contactform img, h5, p {
+            color: white;
+            margin: 0px;
         }
+
+        
+        
 
 /* end of card code */
 
@@ -149,6 +165,7 @@ body {
             padding-top: 10px;
             padding-bottom: 10px;
             font-size: 22px;
+            margin-top: 14%;
         }
 
         .logins a:hover{
@@ -575,46 +592,33 @@ body {
     <div class="row main">
         <div class="col-12">
             <div class="card content">
-                <h3 class="text-center"> Contact Us </h3>
-                <p> If you have any questions or inquiries, feel free to contact or message ACED Learning Center and provide your details, such as full name and email </p>
-    
+                <div class="titlediv">
+                <h3 class="text-center tit"> Contact Us </h3>
+                <p id="titdes"> If you have any questions or inquiries, feel free to contact or message ACED Learning Center and provide your details, such as full name and email </p>
+                </div>
                 <div class="row contentrow">
-                    <div class="col-md-6">
+                    <div class="col-md-6 contact">
                         <div class="card contactdiv">
-                           <div class="card popocard">
-                            <div class="row box">
-                                <div class="insidecontact">
-                                <img src="addressicon.png">
+                            <form class="contactform ">
+                                <div class="card address">
+                                    <img src="addressicon.png">
+                                    <br>
+                                    <h5> Address </h5>
+                                    <p> Pacheco Building, Singao Road, Kidapawan City </p>
+                                    <br>
+                                    <img src="phoneicon.png">
+                                    <br>
+                                    <h5> Phone </h5>
+                                    <p> Tel no. 555-1234 / SMART: 09307607278 </p>
+                                    <br>
+                                    <img src="emailicon.png">
+                                    <h5> Email </h5>
+                                    <p> Acedlearningcenter@gmail.com </p>
                                 </div>
-                                <div class="insidecontact">
-                                <h5> Address </h5>
-                                <p> Pacheco Building, Singao Road, Kidapawan City </p>
-                                </div>
-                            </div>
-                            
-                            <div class="row box">
-                                <div class="insidecontact">
-                                <img src="phoneicon.png">
-                                </div>
-                                <div class="insidecontact">
-                                <h5> Phone </h5>
-                                <p> Tel no. 555-1234 / SMART: 09307607278 </p>
-                                </div>
-                            </div>
-                            
-                            <div class="row box">
-                                <div class="insidecontact">
-                                <img src="emailicon.png">
-                                </div>
-                                <div class="insidecontact">
-                                <h5> Email </h5>
-                                <p> Acedlearningcenter@gmail.com </p>
-                                </div>
-                            </div>
+                            </form>
                         </div>
-                        </div>
-                        
                     </div>
+
                     <div class="col-md-6 message">
                         <div class="card messagediv">
                             <form class="messageform ">
